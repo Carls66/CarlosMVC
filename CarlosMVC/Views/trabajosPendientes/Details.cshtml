@@ -1,0 +1,66 @@
+﻿@model CarlosMVC.Models.trabajosPendientes
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>trabajosPendientes</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Cliente)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Cliente)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Descripcion)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Descripcion)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Recibido)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Recibido)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Entrega)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Entrega)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Adelanto)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Adelanto)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Total)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Total)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
